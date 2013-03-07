@@ -1,0 +1,4 @@
+Python script that checks parameters.yml keys are identical in each evironments.
+needs PyYAML library, to install run: apt-get install python-setuptools && easy_install PyYAML
+Then copy pre-commit file content to your git repo hooks dir: 
+cat tools/git/hooks/pre-commit >> .git/hooks/pre-commit

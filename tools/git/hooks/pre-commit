@@ -1,0 +1,10 @@
+#!/bin/sh
+
+RESULT=$(python "tools/git/check_params.py")
+if [ ! -z "$RESULT" ]
+then
+	echo "Error: checking parameters files contents"
+    echo "$RESULT"
+	exit 1
+fi
+
